@@ -1,0 +1,110 @@
+/*!
+Theme Name:   ecfront
+Theme URI:    https://woocommerce.com/ecfront/
+Author:       Automattic
+Author URI:   https://woocommerce.com/
+Description:  Storefront is the perfect theme for your next WooCommerce project. Designed and developed by WooCommerce Core developers, it features a bespoke integration with WooCommerce itself plus many of the most popular customer facing WooCommerce extensions. There are several layout & color options to personalise your shop, multiple widget regions, a responsive design and much more. Developers will love its lean and extensible codebase making it a joy to customize and extend. Looking for a WooCommerce theme? Look no further!
+Version:      3.5.0
+Tested up to: 5.6.0
+Requires PHP: 5.6.0
+License:      GNU General Public License v2 or later
+License URI:  https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain:  ecfront
+Tags:         e-commerce, two-columns, left-sidebar, right-sidebar, custom-background, custom-colors, custom-header, custom-menu, featured-images, full-width-template, threaded-comments, accessibility-ready, rtl-language-support, footer-widgets, sticky-post, theme-options, editor-style
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+Storefront is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
+
+Resetting and rebuilding styles have been helped along thanks to the fine work of
+Eric Meyer https://meyerweb.com/eric/tools/css/reset/index.html
+along with Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+
+All sizing (typography, layout, padding/margins, etc) are inspired by a modular scale that uses 1em as a base size with a 1.618 ratio.
+You can read more about the calculator we use in our Sass here: https://github.com/modularscale/modularscale-sass
+
+FontAwesome License: SIL Open Font License - http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL
+Images License: GNU General Public License v2 or later
+*/
+/*!
+ * normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css
+ */
+
+
+
+
+ @charset "utf-8";
+
+
+ img {
+  max-width: 100%;
+  height: auto;}
+
+
+
+
+
+
+  #pc_head_fix {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(208,199,172,0.9);
+    z-index: 10;
+  }
+  #pc_head_fix #pc_head_fix_inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    padding: 8px 0;  justify-content: space-between;
+  }
+  form.woocommerce-product-search {
+    width: 550px;
+    height: 23px;
+    border-radius: 15px;
+    background-color: #fff;
+  }
+
+
+  #woocommerce-product-search-field-0 {
+    border: 0;
+    width: 400px;
+    height: 23px;
+    font-size: .8rem;
+    background: transparent;
+    padding: 3px 15px 0 3em;
+  }
+  #pc_head_fix #pc_head_fix_inner #head_customer_list {
+    list-style: none;
+    text-align: right;
+    vertical-align: middle;
+  }
+  label.screen-reader-text
+  ,  form.woocommerce-product-search [ type="submit"]
+   {  display: none;}
+
+ .site-search .widget_product_search form:before {
+  top: 1.15em;
+  left: 2.15em;
+}
+.site-header-cart {
+  height: 1em;}
+  .site-header-cart li { line-height: 1em;  height: 1em;}
+  .site-header-cart .cart-contents { padding:0 !important;}
+  div#pc_head_fix_inner * {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+.site-header-cart .cart-contents:after {
+    margin-left: 1em;}
+ul#site-header-cart {
+      padding-top: 3px;
+}
+.site-header-cart .cart-contents:after{line-height: 1;}
+#content{ margin-top: 50px;}
+h1 {
+  margin-top: 25px;
+  text-align: center;}
+h1 img{width: 420px;}
