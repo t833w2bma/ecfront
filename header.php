@@ -104,12 +104,51 @@ $uri = get_theme_file_uri();
 		<div class="col-3">
 			<aside>
 				<ul>
-					<li>AAAA</li>
+					<li><?php dynamic_sidebar('side-2');  ?></li>
 					<li>BBBB</li>
 				</ul>
 			</aside>
 		</div>
 		<div class="col-9">
 
-		<?php
+		<?php 
+		
+		dynamic_sidebar('side-1'); 
+
+
+/* データの表示指定 */
+$type =24;  // カテゴリID 
+$item_count = 6; //1ページに表示したいアイテム数 
+$sp = empty($_GET['pg']) ? 1 : $_GET['pg'] ;
+
+$field = "SELECT object_id , p.post_title ,post_content,post_date,post_excerpt,post_name,
+p.post_type , p.post_status, m.stock_quantity , m.min_price, m.max_price ,meta_value" ;
+
+$query = "
+	FROM `$wpdb->term_relationships` as t
+	left join $wpdb->posts as p on p.id = t.object_id 
+	left join `$wpdb->wc_product_meta_lookup` as m on m.product_id = t.object_id 
+	left join `$wpdb->postmeta` as e on e.post_id = t.object_id 
+	WHERE `term_taxonomy_id` = %d AND p.post_type = 'product' AND p.post_status = 'publish' 
+	AND e.meta_key = '_price' " ;
+
+$sql = $field . $query ." LIMIT %d, $item_count;";
+
+$results = $wpdb->get_results( $wpdb->prepare( $sql ,$type ,($sp-1)*$item_count) );
+?>
+
+<h2>古着新着情報</h2>
+	<ul class="product-new">
+<?php
+
+	foreach($results as $row) 
+		// var_dump($row);
+		echo "
+			<li> <time>$row->post_date</time> <a href='product/$row->post_name'> $row->post_title</a>
+		
+		";
+?>
+	</ul>
+<?php
+
 		do_action( 'storefront_content_top' );

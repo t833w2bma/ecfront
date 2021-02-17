@@ -16,6 +16,20 @@ $storefront_version = $theme['Version'];
  */
 
 
+
+//ウィジェット idが必須になった
+register_sidebar(
+	array('id'=>'side-1')
+);
+register_sidebar(
+	array('id'=>'side-2')
+);
+register_sidebar(
+	array('id'=>'side-3')
+);
+
+
+
 function add_files() {
 	$handle = 'bootstrap';
 	$src = 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css';
