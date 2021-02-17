@@ -72,7 +72,7 @@ Images License: GNU General Public License v2 or later
     border: 0;
     width: 400px;
     height: 23px;
-    font-size: .8rem;
+    font-size: .8em;
     background: transparent;
     padding: 3px 15px 0 3em;
   }
@@ -108,3 +108,93 @@ h1 {
   margin-top: 25px;
   text-align: center;}
 h1 img{width: 420px;}
+
+#head_cust_list ul#head_4info {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 100%;
+  letter-spacing: -.4em;
+}
+
+#head_cust_list ul#head_4info li.wrappi {
+  background-color: #ff8080;
+  box-shadow: 1px 1px 3px #ff6767;
+  text-shadow: 1px 1px 2px #ff1a1a;
+}
+#head_cust_list ul#head_4info li.syukka {
+  background-color: #ff935c;
+  box-shadow: 1px 1px 3px #ff8243;
+  text-shadow: 1px 1px 2px #f55300;
+}
+#head_cust_list ul#head_4info li.soryou {
+  background-color: #1fab89;
+  box-shadow: 1px 1px 3px #1b9578;
+  text-shadow: 1px 1px 2px #0f5544;
+}
+#head_cust_list ul#head_4info li.henpin {
+  background-color: #41aaa8;
+  box-shadow: 1px 1px 3px #3a9896;
+  text-shadow: 1px 1px 2px #25605f;
+}
+#head_cust_list ul#head_4info li {
+  width: 24%;
+  margin: 0 0.5% 0;
+  padding: 10px 0 10px;
+  height: 46px;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  letter-spacing: normal;
+  color: #fff;
+  font-size: 1em;
+  border-radius: 3px;
+  background-image: url(./images/alpha_stripe.png);
+  background-size: 25px;
+}
+#head_cust_list ul#head_4info li span {
+  width: 100%;
+  height: 100%;
+  padding: 0 5px 1px 5px;
+  background: linear-gradient(transparent 65%, rgba(255,220,0,0.9) 65%, rgba(255,220,0,0.9) 90%, transparent 90%);
+}
+#head_cust_list ul#head_4info li strong {
+  font-size: .7em;
+  font-weight: normal;
+  padding: 0 2px;
+}
+ul.nav-menu {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+  }
+  #head_srch form .head_srch_form {
+    border: 0;
+    height: 25px;
+    font-size: 12px;
+    font-size: 1.2rem;
+    padding: 3px 15px;
+    width: 1030px;
+    background-color: transparent;
+}
+#head_srch form {
+  width: 1100px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: #ece8dd;
+  box-shadow: 0 0 3px #d0c7ac inset;
+}
+input#woocommerce-product-search-field-1 {
+  border: none;
+  text-align: center;
+  display: block;
+  background: #fff0;
+  width: 100%;
+}
+
+
+  @media (min-width:468px){
+    button.menu-toggle{display: none;}
+
+  }

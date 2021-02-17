@@ -82,6 +82,23 @@ $uri = get_theme_file_uri();
 	?>
 
 	<div id="content" class="site-content container" tabindex="-1">
+
+	<div id="head_cust_list">
+		<ul id="head_4info" class="list_none clear">
+			<li class="henpin"><a href="?mode=sk#henpin"><span>ネットショップ<strong>全商品返品可</strong></span></a></li>
+			<li class="soryou"><a href="?mode=sk#delivery"><span>10,000円以上のご注文で<strong>送料無料</strong></span></a></li>
+			<li class="syukka"><span>午後2時までのご注文<strong>当日出荷</strong></span></li>
+			<li class="wrappi"><a href="?tid=73&amp;mode=f5"><span>Free Wrapping<strong>ラッピング無料</strong></span></a></li>
+		</ul>
+	</div>
+
+	<?php //グローバルナビ 
+		storefront_primary_navigation();  ?>
+
+	<div id="head_srch">
+		<?php storefront_product_search(); ?>
+	</div>
+		
 	<div class="row top">
 
 		<div class="col-3">
