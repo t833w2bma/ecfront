@@ -7,6 +7,9 @@
  * @package storefront
  */
 
+
+ //テンプレートパーツをインクルード
+		get_template_part( 'original/main_bottom' ); 
 ?>
 
 		</div><!-- .col-9 -->

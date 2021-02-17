@@ -185,15 +185,22 @@ ul.nav-menu {
   background-color: #ece8dd;
   box-shadow: 0 0 3px #d0c7ac inset;
 }
-input#woocommerce-product-search-field-1 {
+input#woocommerce-product-search-field-1
+ {
   border: none;
   text-align: center;
   display: block;
   background: #fff0;
   width: 100%;
 }
-
-
+input#woocommerce-product-search-field-1:focus {
+  outline: none;
+}
+@keyframes onAutoFillStart { from {} to {}}
+input:-webkit-autofill {
+    animation-name: onAutoFillStart;
+    transition: background-color 50000s ease-in-out 0s;
+}
   @media (min-width:468px){
     button.menu-toggle{display: none;}
 
